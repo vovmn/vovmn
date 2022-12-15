@@ -1,0 +1,10 @@
+soldja(9,2,"Nikita","Major",36).
+soldja(5,6,"Artem","senior lieutenant",29).
+soldja(2,3,"Alexandr","Corporal",18).
+soldja(6,7,"Vladimir","ensign",31).
+soldja(1,4,"Maximilian","captain",21).
+soldja(3, 5,"Ilia","Colonel",41).
+
+information_to_title(Rota,Chast,Name,age):-soldja(Rota,Chast,Name,_,age).
+information_to_age(Rota,Chast,Name,title):-soldja(Rota,Chast,Name,title,_).
+information_to_Rota(,Chast,Name,title,age):-soldja(_,Chast,Name,title,age).
